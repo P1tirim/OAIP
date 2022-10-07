@@ -12,8 +12,8 @@
             Console.WriteLine($"Хэш1: {person1.GetHashCode()} Хэш2: {person2.GetHashCode()} ");
 
             Student student = new Student();
-            student.AddExams(new Exam());
             student.AddExams(new Exam("OAIP", 5, DateTime.Now));
+            student.AddExams(new Exam());
             student.AddTest(new Test());
 
             Console.WriteLine(student.ToString());

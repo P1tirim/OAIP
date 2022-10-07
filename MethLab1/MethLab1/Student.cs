@@ -108,12 +108,15 @@ namespace MethLab1
             for(int i = 0; i < _exams.Count; i++)
             {
                 if (_exams[i] is not null)
-                    arrE += _exams[0].ToString();
+                {
+                    arrE += _exams[i].ToString();
+                }
+                    
             }
             for (int i = 0; i < tests.Count; i++)
             {
                 if (tests[i] is not null)
-                    arrT += tests[0].ToString();
+                    arrT += tests[i].ToString();
             }
             string output = $"{firstName} {lastname} {dateBirth} {_education} {_groupNumber} {AverageGrade} {arrE} {arrT}";
             return output;
